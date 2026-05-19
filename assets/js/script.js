@@ -1,6 +1,48 @@
 let jogosOriginais = [];
 let jogosFiltrados = [];
 
+const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+const jogosDesktopOnly = [
+    "adivinhe-o-numero",
+    "adivinhe-o-time",
+    "bounce-survival",
+    "bug-hunter",
+    "campo-minado",
+    "campo-minado2",
+    "coliseu-arcano",
+    "corredor-infinito",
+    "dance-click",
+    "desafio-da-carminha",
+    "dodge-game",
+    "duel-soccer",
+    "entregador-do-caos",
+    "flappy-bird",
+    "galaxy-defender",
+    "jogo-breakout",
+    "jogo-da-capivara",
+    "jogo-da-cobrinha-rosa",
+    "jogo-da-cobrinha2",
+    "jogo-da-forca",
+    "jogo-da-memoria",
+    "jogo-da-memoria6",
+    "jogo-de-huffman",
+    "meteor-rush",
+    "neon-survivor",
+    "peach-maze",
+    "quase-tetris",
+    "rota-de-fuga",
+    "slime-trail-game",
+    "snake-game2",
+    "snake-game3",
+    "snake-game4",
+    "space-invaders",
+    "star-defender",
+    "termo-cruzado",
+    "tetris",
+    "zona-z"
+];
+
 const listaJogos = document.getElementById("lista-jogos");
 const campoBusca = document.getElementById("campo-busca");
 const filtroSemestre = document.getElementById("filtro-semestre");
@@ -359,6 +401,13 @@ async function carregarJogos() {
             throw new Error("O arquivo JSON não está no formato esperado.");
         }
         jogosOriginais = dados.jogos;
+        if (isMobile) {
+            jogosOriginais = jogosOriginais.filter(jogo => {
+                return !jogosDesktopOnly.some(nome =>
+                    jogo.link.includes(nome)
+                );
+            });
+        }
         popularFiltros();
         atualizarContadorFavoritos();
         renderizarDestaques();
