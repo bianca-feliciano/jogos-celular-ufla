@@ -6,6 +6,7 @@ const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(
 const jogosDesktopOnly = [
     "adivinhe-o-numero",
     "adivinhe-o-time",
+    "boom-game",
     "bounce-survival",
     "bug-hunter",
     "campo-minado",
@@ -21,6 +22,7 @@ const jogosDesktopOnly = [
     "galaxy-defender",
     "jogo-breakout",
     "jogo-da-capivara",
+    "jogo-da-cobrinha",
     "jogo-da-cobrinha-rosa",
     "jogo-da-cobrinha2",
     "jogo-da-forca",
