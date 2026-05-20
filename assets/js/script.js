@@ -4,13 +4,9 @@ let jogosFiltrados = [];
 const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
 
 const jogosDesktopOnly = [
-    "adivinhe-o-numero",
-    "adivinhe-o-time",
     "boom-game",
     "bounce-survival",
-    "bug-hunter",
-    "campo-minado",
-    "campo-minado2",
+    "beat-master",
     "coliseu-arcano",
     "corredor-infinito",
     "dance-click",
@@ -29,6 +25,7 @@ const jogosDesktopOnly = [
     "jogo-da-memoria",
     "jogo-da-memoria6",
     "jogo-de-huffman",
+    "loldle-remake",
     "meteor-rush",
     "neon-survivor",
     "peach-maze",
