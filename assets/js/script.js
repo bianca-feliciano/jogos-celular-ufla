@@ -4,6 +4,7 @@ let jogosFiltrados = [];
 const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
 
 const jogosDesktopOnly = [
+    "bad-ice-cream",
     "boom-game",
     "bounce-survival",
     "beat-master",

@@ -61,6 +61,16 @@
             "destaque": "não"
         },
         {
+            "nome": "Bad Ice Cream",
+            "descricao": "Jogo de ação e aventura, onde o jogador controla um sorvete que deve coletar frutas em um labirinto, evitando inimigos e obstáculos.",
+            "autores": "Bianca Feliciano Lima",
+            "imagem": "bad-ice-cream.png",
+            "link": "jogos/bad-ice-cream/index.html",
+            "semestre": "2026/1",
+            "turma": "14B",
+            "destaque": "sim"
+        },
+        {
             "nome": "Pedra, Papel, Tesoura",
             "descricao": "Jogo clássico onde dois jogadores escolhem entre pedra, papel e tesoura para determinar o vencedor.",
             "autores": "Bruno Souza Carvalho",
